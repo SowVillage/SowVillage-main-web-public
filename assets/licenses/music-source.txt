@@ -3,7 +3,7 @@ Album: Minecraft - Volume Alpha
 Composer and recording artist: C418 (Daniel Rosenfeld)
 Official track page: https://c418.bandcamp.com/track/sweden
 
-Playback source: Minecraft's official resource CDN (remote reference only).
+Original file source: Minecraft's official resource CDN.
 https://resources.download.minecraft.net/be/be9b14926936c4509f7fe5002cdfbba3b2752d82
 
 Verified against the official Minecraft Java Edition 1.21.4 asset index:
@@ -12,14 +12,16 @@ Asset key: minecraft/sounds/music/game/sweden.ogg
 SHA-1: be9b14926936c4509f7fe5002cdfbba3b2752d82
 Size: 2551609 bytes
 
-The project references the official source for playback. No copy of the music
-is bundled with the site. Music rights remain with their respective owners;
-this attribution does not grant a redistribution license. The font's OFL and
-the site's code do not license this music.
+The unchanged OGG file is bundled at assets/audio/sweden.ogg for same-origin
+loading by this noncommercial community memorial. Music rights remain with
+their respective owners; this attribution does not grant a redistribution
+license. The font's OFL and the site's code do not license this music.
 
 Playback uses the browser's native HTMLAudioElement, with looping enabled.
-The first-visit loading screen preloads the complete buffered track silently,
-without changing the saved music preference. This buffer remains attached to
-the same media element for playback and later toggles during the current visit.
+The first-visit loading screen downloads the complete file with fetch, then
+loads the retained Blob URL silently without changing the saved preference.
+It verifies that the downloaded source can be decoded before starting the
+intro. Native preload and buffered ranges are not used as proof that a newly
+downloaded file is complete. The same source is retained for later toggles.
 The music switch is retained in localStorage without an expiry. Browsers may
 require a click or keypress to resume a saved ON choice on a later visit.
