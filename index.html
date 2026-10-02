@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#17231c" />
+    <meta name="description" content="老母猪村纪念馆。始于2017，献给一起创造过这个世界的老朋友。" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preload" href="./assets/fonts/pixel.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./assets/village.webp" as="image" />
+    <title>〖老母猪村纪念馆〗 · 欢迎回家</title>
+    <script type="module" crossorigin src="./assets/index-CgdtkQ0J.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-C3M2Osg0.css">
+  </head>
+  <body>
+    <div class="world" aria-hidden="true">
+      <div class="world-image world-image--current"></div>
+      <div class="world-image world-image--next"></div>
+      <div class="world-shade"></div>
+      <div class="world-grain"></div>
+      <canvas id="fireflies"></canvas>
+      <div class="lantern-light"></div>
+    </div>
+
+    <div class="site-shell" id="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./" aria-label="老母猪村纪念馆首页">
+          <img class="brand-pig" src="./favicon.svg" width="36" height="36" alt="" />
+          <span>老母猪村<span class="brand-divider">/</span><span class="brand-subtitle">纪念馆</span></span>
+        </a>
+        <div class="header-actions">
+          <span class="since">始于 <span>2017</span></span>
+          <span class="header-divider" aria-hidden="true"></span>
+          <button class="icon-button" id="sound-toggle" data-bgm-toggle type="button" aria-label="开启音乐" aria-pressed="false" title="开启音乐 · C418 / Sweden">
+            <span class="ui-icon icon-sound" aria-hidden="true"></span>
+            <span class="sound-caption">BGM 关闭</span>
+          </button>
+          <button class="icon-button motion-button" id="motion-toggle" type="button" aria-label="暂停场景动效" aria-pressed="false" title="暂停场景动效">
+            <span class="ui-icon icon-motion" aria-hidden="true"></span>
+          </button>
+        </div>
+      </header>
+
+      <main id="main">
+        <section class="welcome" aria-labelledby="museum-title">
+          <div class="welcome-overline"><span></span> 我们的方块世界 <span></span></div>
+          <div class="title-wrap">
+            <h1 id="museum-title"><span class="village-title">老母猪村</span><span class="museum-title">纪念馆</span></h1>
+            <span class="title-splash" aria-hidden="true">欢迎回家！</span>
+          </div>
+          <p class="greeting">好久不见，老朋友。</p>
+
+          <div class="construction-sign">
+            <img src="./assets/items/iron_pickaxe.png" width="24" height="24" alt="" />
+            <p>老母猪村纪念馆建设中<span class="building-dots">...</span></p>
+          </div>
+
+          <div class="welcome-actions">
+            <button class="mc-button mc-button--primary" id="lantern-toggle" type="button" aria-pressed="false">
+              <img src="./assets/items/lantern.png" width="26" height="26" alt="" />
+              <span id="lantern-label">点亮一盏灯</span>
+            </button>
+            <button class="mc-button mc-button--secondary" id="scenery-toggle" type="button" aria-pressed="false">
+              <span class="ui-icon icon-scenery" aria-hidden="true"></span>
+              <span>看看风景</span>
+            </button>
+          </div>
+        </section>
+
+        <div class="world-picker" role="group" aria-label="切换世界风景">
+          <span class="world-picker-caption">还记得这个世界吗</span>
+          <div class="hotbar">
+            <button class="world-slot is-active" type="button" data-world="village" aria-pressed="true" aria-label="原版生存风景">
+              <span class="slot-number" aria-hidden="true">1</span>
+              <img src="./assets/items/oak_sapling.png" width="32" height="32" alt="" />
+              <span>原版生存</span>
+            </button>
+            <button class="world-slot" type="button" data-world="island" aria-pressed="false" aria-label="海岛生存风景">
+              <span class="slot-number" aria-hidden="true">2</span>
+              <img src="./assets/items/wheat.png" width="32" height="32" alt="" />
+              <span>海岛生存</span>
+            </button>
+            <button class="world-slot" type="button" data-world="cave" aria-pressed="false" aria-label="地底生存风景">
+              <span class="slot-number" aria-hidden="true">3</span>
+              <img src="./assets/items/iron_pickaxe.png" width="32" height="32" alt="" />
+              <span>地底生存</span>
+            </button>
+          </div>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <p class="footer-memory"><img src="./assets/items/poppy.png" width="19" height="19" alt="" /><span>有空，再回来坐坐。</span></p>
+        <button class="replay-button" id="replay-intro" type="button"><span class="ui-icon icon-replay" aria-hidden="true"></span>重看开场</button>
+        <p class="footer-note">献给每一位老村民</p>
+      </footer>
+    </div>
+
+    <button class="return-button mc-button" id="return-to-museum" type="button" hidden><span class="ui-icon icon-back" aria-hidden="true"></span>返回纪念馆</button>
+    <div class="lit-lantern" aria-hidden="true"><span class="lantern-chain"></span><img src="./assets/items/lantern.png" width="80" height="80" alt="" /></div>
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+    <noscript><p class="noscript-message">老母猪村纪念馆建设中... 开启 JavaScript 后，可以观看开场和切换风景。</p></noscript>
+  </body>
+</html>

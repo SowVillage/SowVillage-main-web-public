@@ -1,0 +1,46 @@
+ASSET SOURCES — 老母猪村纪念馆
+
+Font
+----
+File: ../fonts/pixel.woff2
+Actual family: Fusion Pixel 12px Proportional, Simplified Chinese (zh-Hans)
+Project: https://github.com/TakWolf/fusion-pixel-font
+Downloaded from the project's official specimen website:
+https://fusion-pixel-font.takwolf.com/fusion-pixel-12px-proportional-zh_hans.otf.woff2
+Copyright (c) 2022, TakWolf (https://takwolf.com).
+License: SIL Open Font License 1.1; full license retained in fusion-pixel-OFL.txt.
+This is the complete original WOFF2 font, not a subset. The CSS alias "Zpix"
+is an internal integration name; this asset is not the Zpix font by SolidZORO.
+Use multiples of 12px where practical for crisp pixel edges.
+
+Minecraft textures
+------------------
+Files: ../items/*.png
+Copyright Mojang Studios / Microsoft. These are original Minecraft Java
+Edition 1.21.4 textures, obtained unchanged from the community archive:
+https://github.com/InventivetalentDev/minecraft-assets/tree/1.21.4
+The archive is a mirror of game assets, not the copyright holder.
+
+Source root:
+https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/1.21.4/assets/minecraft/textures/
+
+Local name                 Source path
+lantern.png                item/lantern.png
+oak_sapling.png            block/oak_sapling.png
+iron_pickaxe.png           item/iron_pickaxe.png
+wheat.png                  item/wheat.png
+poppy.png                  block/poppy.png
+grass_block_side.png       block/grass_block_side.png
+grass_block_top.png        block/grass_block_top.png
+compass_16.png             item/compass_16.png
+clock_00.png               item/clock_00.png
+
+All textures are 16 x 16 pixels. grass_block_top.png is an original grayscale
+texture intended to receive a biome color in-game, not a colored inventory icon.
+Minecraft assets are not distributed under the font's open-source license.
+Relevant terms: https://www.minecraft.net/en-us/usage-guidelines
+EULA: https://www.minecraft.net/en-us/eula
+This site is an unofficial, noncommercial fan memorial and is not associated
+with, approved, or endorsed by Mojang or Microsoft.
+
+Downloaded: 2026-10-02
