@@ -4,7 +4,7 @@ Generated and refined with the built-in imagegen tool, 2026-10-02.
 Original subject reference: the main promotional image on page 1 of 《老母猪海岛介绍》, provided in this project's reference folder. These are newly created interpretations, not historical server screenshots. Original text and player omitted.
 Art direction: make the complete ocean island the focal point, preserve the sand shore, crops, stone-brick machinery and command blocks, with coherent Minecraft pixel textures and restrained sunset lighting. Shortened command-block column keeps the title area clear. Phone versions recompose the full island rather than cropping the desktop artwork.
 Files: island.webp and intro-island.webp (16:9); island-mobile.webp and intro-island-mobile.webp (9:16).
-WebP conversion at quality 88 without cropping or color changes. Portrait assets apply at viewport width <= 768px in portrait orientation.
+Initial WebP conversion was quality 88. Current assets use lossless WebP (quality 100, lossless=true, method 6); intro detail refinement and actual output dimensions are documented in island-clarity-prompts.txt. No resizing or cropping during export. Portrait assets apply at viewport width <= 768px in portrait orientation.
 
 Style development reference prompt
 Use case: style-transfer and composition refinement.

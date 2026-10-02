@@ -1,0 +1,24 @@
+CLARITY REFINEMENT — 老母猪村纪念馆
+
+2026-10-02, built-in imagegen (not the CLI/API fallback).
+The existing approved intro images were the edit targets. The output keeps their framing and island design, with refined pixel-texture detail.
+Requested output dimensions in the prompts are aspirational; actual native outputs are 1672 x 941 (desktop) and 941 x 1672 (mobile), not native 4K. No resizing or artificial upscaling was applied.
+PNG masters: artwork/intro/desktop.png and artwork/intro/mobile.png in the private source repository.
+Web assets: public/assets/intro-island.webp and public/assets/intro-island-mobile.webp.
+All four island WebPs are now encoded directly from their PNG masters as lossless WebP (quality 100, lossless=true, method 6), with metadata stripped. Cover PNGs remain the previously approved composition and are saved under artwork/island/.
+
+Desktop prompt
+Use case: precise-object-edit, fidelity and clarity enhancement.
+Asset: full-screen desktop opening scene for a Minecraft memorial website.
+Input image: the existing approved opening background, edit target. Re-render this exact composition at the highest available native resolution, ideally 3840 x 2160, strictly 16:9.
+Change ONLY rendering clarity, fine texture definition and pixel detail. Preserve the same camera, the full island silhouette and position, all buildings and object placement, horizon, sky, water, light direction, shadows and restrained sunset colors. The island remains the sharp focal point.
+Render clean, crisp authentic Minecraft pixel-textured block edges; readable stone-brick joins, individual crops and wheat stalks, wood grain on chests, sand-block texture, water caustics and underwater block steps. Natural material detail, no sharpening halos, no blur, no waxy surfaces. Minimize atmospheric haze over the island, retain subtle atmosphere only at the distant horizon. Preserve the peaceful warm light. Keep the complete sand shoreline inside the frame.
+DO NOT add structures, objects, people, lettering, labels, HUD, borders or watermark. No redesign, no new scenery, no composition shift. The image should match the reference closely while looking much clearer and more detailed on a large desktop display. One full-bleed high resolution 16:9 image.
+
+Mobile prompt
+Use case: precise-object-edit, clarity enhancement.
+Asset: full-screen mobile opening scene for a Minecraft memorial website.
+Input image is the approved portrait opening background, the edit target. Retain this EXACT composition and design, while making the island's surfaces substantially clearer. Deliver highest available native resolution, ideally 2160 x 3840, strictly 9:16 portrait.
+Keep the camera, full sand island silhouette and screen position, crop rows, stone-brick machinery, short green command-block stack, sea lanterns, chests, sugar cane, distant horizon, sky and sunset lighting exactly as they are. Do not zoom or crop.
+Improve the clarity of authentic Minecraft pixel textures, crisp block edges and stone joins, individual wheat and green crop stalks, wood and sand texture, clear stepped underwater sand and delicate ocean reflections. The island is the visual focus. Keep distant atmosphere, but avoid haze or fuzzy edges on the island. Coherent warm lighting across materials, natural contrast, no excessive sharpening or halos. Match the original orange-peach sunset and muted teal sea. Leave the upper sky calm for captions added separately.
+No redesign, new objects, new architecture, humans, text, labels, HUD, border or watermark. One seamless full-bleed 9:16 portrait image, visually faithful and sharply detailed.
