@@ -18,5 +18,8 @@ this attribution does not grant a redistribution license. The font's OFL and
 the site's code do not license this music.
 
 Playback uses the browser's native HTMLAudioElement, with looping enabled.
+The first-visit loading screen preloads the complete buffered track silently,
+without changing the saved music preference. This buffer remains attached to
+the same media element for playback and later toggles during the current visit.
 The music switch is retained in localStorage without an expiry. Browsers may
 require a click or keypress to resume a saved ON choice on a later visit.
