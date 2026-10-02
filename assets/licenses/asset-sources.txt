@@ -3,14 +3,19 @@ ASSET SOURCES — 老母猪村纪念馆
 Font
 ----
 File: ../fonts/pixel.woff2
-Actual family: Fusion Pixel 12px Proportional, Simplified Chinese (zh-Hans)
+Actual family: SowVillage Pixel (site subset of Fusion Pixel 12px Proportional,
+Simplified Chinese / zh-Hans)
 Project: https://github.com/TakWolf/fusion-pixel-font
 Downloaded from the project's official specimen website:
 https://fusion-pixel-font.takwolf.com/fusion-pixel-12px-proportional-zh_hans.otf.woff2
 Copyright (c) 2022, TakWolf (https://takwolf.com).
 License: SIL Open Font License 1.1; full license retained in fusion-pixel-OFL.txt.
-This is the complete original WOFF2 font, not a subset. The CSS alias "Zpix"
-is an internal integration name; this asset is not the Zpix font by SolidZORO.
+This is a subset containing the current page text and common symbols. Glyph
+outlines, widths and hinting are retained; unused characters are removed.
+The modified font family is renamed SowVillage Pixel. The complete original
+is retained in the private source at artwork/source-assets/fonts/pixel.woff2.
+The CSS alias "Zpix" is an internal integration name; this asset is not the
+Zpix font by SolidZORO.
 Use multiples of 12px where practical for crisp pixel edges.
 
 Minecraft textures
@@ -35,7 +40,9 @@ grass_block_top.png        block/grass_block_top.png
 compass_16.png             item/compass_16.png
 clock_00.png               item/clock_00.png
 
-All textures are 16 x 16 pixels. grass_block_top.png is an original grayscale
+All textures are 16 x 16 pixels. PNG optimization only accepts byte-identical
+decoded pixels and a smaller file; already compact originals are retained.
+grass_block_top.png is an original grayscale
 texture intended to receive a biome color in-game, not a colored inventory icon.
 Minecraft assets are not distributed under the font's open-source license.
 Relevant terms: https://www.minecraft.net/en-us/usage-guidelines

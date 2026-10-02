@@ -12,8 +12,14 @@ Asset key: minecraft/sounds/music/game/sweden.ogg
 SHA-1: be9b14926936c4509f7fe5002cdfbba3b2752d82
 Size: 2551609 bytes
 
-The unchanged OGG file is bundled at assets/audio/sweden.ogg for same-origin
-loading by this noncommercial community memorial. Music rights remain with
+The original is retained in the private source at
+artwork/source-assets/audio/sweden.ogg. The website export is a lightly
+re-encoded Ogg Vorbis file at assets/audio/sweden.ogg (quality 3, 44.1 kHz,
+stereo, 2329002 bytes, complete duration 229.772766 seconds). No excerpt,
+speed change or loudness normalization is applied.
+
+The export is bundled for same-origin loading by this noncommercial community
+memorial. Music rights remain with
 their respective owners; this attribution does not grant a redistribution
 license. The font's OFL and the site's code do not license this music.
 
